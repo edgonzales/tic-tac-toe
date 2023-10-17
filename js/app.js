@@ -48,7 +48,6 @@ resetGameBtn.addEventListener('click', function (e) {
 /*----- FUNCTIONS -----*/
 function getOutcome() {    
     WINNING_COMBOS.forEach((combo) => {
-        console.log(combo);
         if(Math.abs(boardState[combo[0]]+boardState[combo[1]]+boardState[combo[2]]) === 3){
             console.log('You win!');
         }
